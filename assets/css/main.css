@@ -1,0 +1,358 @@
+/* 
+Author Name      : Solomon Bonney(Quophi Clef)
+Theme Version    : 1.0
+Website          : localhost/online_market
+*/
+
+/******* General Styling *****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#navbarBackground {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(50px);
+}
+ul.navbar-nav .nav-item {
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    padding: 0 5px;
+}
+ul.navbar-nav .nav-item .nav-link {
+    font-size: 1.0em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+ul.navbar-nav .nav-item .nav-link:hover {
+   opacity: 1;
+   background: #fff;
+   color: rgb(127, 127, 207);
+}
+ul.navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+    font-weight: 800;
+}
+ul.navbar-nav .nav-item .nav-link.active:hover {
+    opacity: 1;
+    background: #fff;
+    color: rgb(127, 127, 207);
+}
+
+/**** Banner Animated Text ****/
+
+/** Home Page Banner ****/
+#home-banner {
+    background-image: url(../images/about-heading.jpg);
+    height: 350px;
+    background-position: center center;
+}
+/** Shopping Cart Banner **/
+#shopping-cart-banner{
+    background-image: url(../images/about-heading.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 350px;
+    max-height: 350px;
+}
+/*** Contact Banner ***/
+#contact-banner {
+    background-image: url(../images/contact-heading.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 350px;
+    max-height: 350px;
+}
+.register {
+    float: inline-end;
+}
+#phones {
+   flex-wrap: wrap;
+}
+#status {
+    position: absolute;
+    background: rgb(214, 31, 31);
+    padding: 2px 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.brands {
+    background-position: center center;
+    height: 200px;
+    cursor: pointer;
+}
+#phoneOverlay:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: all .4s;
+    background: #fff;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+#arrange {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.btnRemove {
+    background-color: rgba(236, 38, 38, 0.788);
+    color: #f0f0f0;
+}
+.form-arrange {
+    display: flex;
+    flex-direction: row;
+}
+/***** Register & Login Form Section ****/
+.register-section {
+    background: lavender;
+}
+#minus {
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    padding: 10px 8px;
+    background: lavender;
+    color: grey;
+    border-radius: 50%;
+}
+.quantityField {
+    margin-left: 5px;
+    width: 50px;
+    height: 35px;
+}
+#plus {
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    padding: 10px 8px;
+    background: lavender;
+    color: grey; 
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.buyingMode {
+    width: auto;
+    height: 40px;
+}
+input[type=text], input[type=email], input[type=password]{
+    border-radius: 5px;
+}
+.btnRegister {
+    height: 50px;
+    border-radius: 5px;
+}
+#inputEmail {
+    height: auto;
+}
+.btnRegister:active {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.6s ease-out;
+}
+.btnLogin {
+    height: 50px;
+    border-radius: 5px;
+}
+.btnLogin:active {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.6s ease-out;
+}
+.fbBtnLogin {
+    height: 50px;
+    background: rgb(87, 87, 207);
+    color: #fff;
+}
+.fbBtnLogin:active {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.6s ease-out;   
+}
+.googleBtnLogin, .linkedinBtnLogin{
+    height: 50px;
+}
+.googleBtnLogin:active, 
+.linkedinBtnLogin:active {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.6s ease-out;  
+}
+.or-text {
+    border-bottom: 5px solid lavender;
+}
+#login-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+textarea {
+    height: 150px;
+}
+/**** Contact Section ***/
+
+/**** Popup Testimonial ****/
+.mini-testimonial {
+    visibility: hidden;
+    transition: .5s ease;
+    transition-property: transform;
+}
+.mini-testimonial.active {
+    visibility: visible;
+   
+}
+#main-container {
+   border: 2px solid lavender;
+   border-radius: 10px;
+}
+.testimonial-box {
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+}
+.mini-testimonial.active .testimonial-box {
+    transition: .5s ease-in-out;
+    transform: scale(1);
+}
+.btnClose {
+    float: right;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: red;
+    margin-top: -80px;
+
+}
+.space-above {
+    margin-top: 55px;
+}
+/***** Foooter Section ****/
+#footerBackground {
+    background: lavender;
+}
+ul.menu {
+    list-style-type: none;
+}
+ul.menu li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: gray;
+}
+.media-handles li a {
+   padding: 0 3px;
+}
+.fa-facebook {
+    width: 32px;
+    height: 32px;
+    color: lavender;
+    padding: 6px 8px;
+    background: rgb(0, 0, 0, 0.6); 
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+.fa-instagram {
+    width: 32px;
+    height: 32px;
+    color: lavender;
+    padding: 6px 8px;
+    background: rgb(0, 0, 0, 0.6); 
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+.fa-youtube {
+    width: 32px;
+    height: 32px;
+    color: lavender;
+    padding: 6px 8px;
+    background: rgb(0, 0, 0, 0.6); 
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+.fa-whatsapp {
+    width: 32px;
+    height: 32px;
+    color: lavender;
+    padding: 6px 8px;
+    background: rgb(0, 0, 0, 0.6); 
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+#social-media a {
+    padding: 0 5px;
+    font-weight: bolder;
+}
+.fa-twitter {
+    width: 35px;
+    height: 35px;
+    color: rgb(0, 0, 0, 0.6);
+    padding: 10px 12px;
+    background: lavender;
+    border-radius: 50px;
+}
+.fa-google-plus {
+    width: 35px;
+    height: 35px;
+    color: rgb(0, 0, 0, 0.6);
+    padding: 10px 12px;
+    background: lavender;
+    border-radius: 50px;
+}
+/*** Responsive Design Styling ****/
+@media (max-width: 280px){
+    .brands {
+        width: 100px;
+        height: 100px;
+    }
+    #register-form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #main-container {
+        margin-top: 10px;
+    }
+    #loyalCustomer-info {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+  #phones, #mini-testimonial {
+      width: 100%;
+      margin: auto;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  #main-container {
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  #loyalCustomer-info {
+      margin-top: 0;
+  }
+  .brands {
+      margin-top: 50px;
+  }
+  #register-form, #cookies {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  .footer-section, #social-media, #newsletter {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+}
+@media (min-width: 769px){
+    .brands {
+        margin-top: 50px;
+    }
+}
+
